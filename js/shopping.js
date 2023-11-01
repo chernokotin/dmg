@@ -3,6 +3,7 @@ const basket_button = document.querySelector(".basket")
 const modal_basket = document.querySelector('.basket__modal')
 const exit = document.querySelector('.shop_exit')
 const finalle = document.querySelector('.final_buy')
+const basket = document.querySelector(".shop__container")
 
 
 function shopping_event(item){
@@ -11,7 +12,6 @@ function shopping_event(item){
         console.log(localStorage);
     }
     else{
-        const basket = document.querySelector(".shop__container")
         let unit_var = document.createElement("div")
         let name_var = document.createElement("div")
         let amount_var = document.createElement("div")
@@ -40,4 +40,7 @@ basket_button.addEventListener('click',()=>{
 })
 finalle.addEventListener('click',()=>{
     localStorage.clear()
+    while(basket.firstChild){
+        basket.removeChild(basket.lastChild)
+    }
 })

@@ -22,9 +22,12 @@ nav_button.addEventListener('click', ()=>{
     if(navlist.style.display != 'none'){
         navlist.style.display = 'none'
         catalogue__title.style.display = 'flex'
+        nav_button.firstElementChild.innerHTML = '&#171'
     }
     else{
         navlist.style.display = 'flex'
         catalogue__title.style.display = 'none'
+        nav_button.firstElementChild.innerHTML = '&#65085'
+        console.log(nav_button.innerHTML);
     }
 })
