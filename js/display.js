@@ -21,10 +21,12 @@ clickable_elems.forEach((elem)=>{
         modal_descr.style.overflow = 'auto'
         modal_img.src = item_img.src
         modal_img.style.maxWidth = '75%'
-        modal_img.style.height = '50%'
+        modal_img.style.maxHeight = '50vh'
+        modal_img.style.minWidth = ' '
         modal_img.style.transition= 'all 1s ease-out'
         modal.parentElement.style.display = 'block'
         modal.style.display = 'block'
+        document.body.style.overflow = 'hidden'
     })
 })
 exitbutton.addEventListener('click',()=>{
@@ -32,4 +34,5 @@ exitbutton.addEventListener('click',()=>{
     modal.parentElement.style.display = 'none'
     modal.style.display = 'none'
     modal.setAttribute('id',``)
+    document.body.style.overflow = ''
 })
