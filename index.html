@@ -53,6 +53,7 @@
                 </div>
             </div>
         </div>
+       
     </header>
     <section class="upper">
         <button class="footer_mains_text on_top">
@@ -278,7 +279,8 @@
                     <img src="./img/a1.jpg" alt="">
                 </div>
                 <div class="item__title">
-                    Товар 12                </div>
+                    Товар 12                
+                </div>
                 <div class="item__descr"></div>
                 <div class="offer">
                     <div class="offer_price">
@@ -312,18 +314,106 @@
     </footer>
     <div class="overlay">
         <div class="basket__modal">
-            <div class="basket__title">
-                Ваш заказ
-            </div>
-            <div class="shop__container">
-                
-            </div>
-            <button class="shop_exit">
-                X
-            </button>
-            <button class="final_buy">
-                Оформить заказ
-            </button>
+            <form action="testserv.php" name="basket_form" class="basket_form" method="post">
+                <br><br>
+                <label for="phone">Ваш телефон</label>
+                <input type="text" id="phone_field" name ="user_phone" required><br><br>
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name_field" name ="user_name" required><br><br>
+                <input type="hidden" id="shop_field" name="shop_items" value="test">
+                <div class="basket__title">
+                    Ваш заказ
+                </div>
+                <div class="shop__container">
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                    <div class="shop_item unselected">
+                        <div class="item_basket_title"></div>
+                        <div class="item_basket_price"></div>
+                    </div>
+                </div>
+                <br><br>
+                <button type="submit" class="final_buy">
+                    Оформить заказ
+                </button>
+                <button class="shop_exit">
+                    X
+                </button>
+            </form>
         </div>
         <div class="modal">
             <img src="" alt="">
