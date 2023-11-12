@@ -33,7 +33,7 @@ offer_buttons.forEach((elem)=>{
 })
 
 exit.addEventListener('click',()=>{
-    modal_basket.style.left = "-70vw"
+    modal_basket.style.left = "-40vw"
 })
 basket_button.addEventListener('click',()=>{
     modal_basket.style.left = "0%"
