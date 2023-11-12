@@ -43,11 +43,56 @@
             <div class="contacts">
                     <button class="basket">
                         <img class="basket_logo" src="./icon/basket.svg" alt="">
-                        Корзина
                     </button>
             </div>
         </div>
     </header>
+    <div class="basket__modal">
+        <form action="testserv.php" name="basket_form" class="basket_form" method="post">
+            <br><br>
+            <label for="phone">Ваш телефон</label>
+            <input type="text" id="phone_field" name ="user_phone" required><br><br>
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name_field" name ="user_name" required><br><br>
+            <input type="hidden" id="shop_field" name="shop_items" value="test">
+            <div class="basket__title">
+                Ваш заказ
+            </div>
+            <div class="shop__container">
+                <div class="shop_item unselected">
+                    <div class="item_basket_title"></div>
+                    <div class="item_basket_price"></div>
+                </div>
+                <div class="shop_item unselected">
+                    <div class="item_basket_title"></div>
+                    <div class="item_basket_price"></div>
+                </div>
+                <div class="shop_item unselected">
+                    <div class="item_basket_title"></div>
+                    <div class="item_basket_price"></div>
+                </div>
+                <div class="shop_item unselected">
+                    <div class="item_basket_title"></div>
+                    <div class="item_basket_price"></div>
+                </div>
+                <div class="shop_item unselected">
+                    <div class="item_basket_title"></div>
+                    <div class="item_basket_price"></div>
+                </div>
+                <div class="shop_item unselected">
+                    <div class="item_basket_title"></div>
+                    <div class="item_basket_price"></div>
+                </div>
+            </div>
+            <br><br>
+            <button type="submit" class="final_buy">
+                Оформить заказ
+            </button>
+            <button class="shop_exit">
+                X
+            </button>
+        </form>
+    </div>
     <section class="category" id="first_section">
         <div class="title">
             <h2>Техника</h2>
@@ -94,7 +139,7 @@
                 <div class="item__title">
                     Телевизор sber 32 (81см)
                 </div>
-                <div class="item__descr">Ну давай разберем по частям, тобою забаненное )) Складывается впечатление что ты реально контуженная , обиженная жизнью дебилка младше 25-ти лет )) Могу тебе и в глаза сказать, готова из новосибирска приехать послушать?) Вся та хуйня тобою забаненное это простое букавки , шлюха ты сопливая)) от того что ты много забанила, жизнь твоя лучше не станет)) банить не мешки ворочить, много вас таких по весне оттаяло )) Про таких как ты говорят: Мама не хотела, папа не старался) Вникай в моё послание тебе постарайся проанализировать и сделать выводы для себя)</div>
+                <div class="item__descr">Компактный телевизор Sber с виртуальным ассистентом Салют. Эфирное ТВ, популярные интернет-сервисы и голосовое управление в одном устройстве. Отлично подойдёт в детскую или квартиру-студию.</div>
                 <div class="offer">
                     <div class="offer_price">
                         <h2>7300 руб.</h2>
@@ -167,108 +212,7 @@
         </div>
     </footer>
     <div class="overlay">
-        <div class="basket__modal">
-            <form action="testserv.php" name="basket_form" class="basket_form" method="post">
-                <br><br>
-                <label for="phone">Ваш телефон</label>
-                <input type="text" id="phone_field" name ="user_phone" required><br><br>
-                <label for="name">Ваше имя</label>
-                <input type="text" id="name_field" name ="user_name" required><br><br>
-                <input type="hidden" id="shop_field" name="shop_items" value="test">
-                <div class="basket__title">
-                    Ваш заказ
-                </div>
-                <div class="shop__container">
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                    <div class="shop_item unselected">
-                        <div class="item_basket_title"></div>
-                        <div class="item_basket_price"></div>
-                    </div>
-                </div>
-                <br><br>
-                <button type="submit" class="final_buy">
-                    Оформить заказ
-                </button>
-                <button class="shop_exit">
-                    X
-                </button>
-            </form>
-        </div>
+        
         <div class="modal">
             <img src="" alt="">
             <div class="modal-text"></div>
