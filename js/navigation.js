@@ -1,10 +1,8 @@
-// console.log(document.getElementById('first_section')!=null);
-// console.log(document.getElementById('#second_section')!=null);
-let navlist = document.querySelector('.navlist')
+const navlist = document.querySelector('.navlist')
 navlist.style.display = 'none'
-let categories = document.querySelectorAll('.category')
-let catalogue__title = document.querySelector('.catalogue__title')
-let nav_button = document.querySelector('.catalogue__button')
+const categories = document.querySelectorAll('.category')
+const catalogue__title = document.querySelector('.catalogue__title')
+const nav_button = document.querySelector('.catalogue__button')
 
 
 categories.forEach(element => {
